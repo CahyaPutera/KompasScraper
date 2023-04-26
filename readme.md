@@ -1,4 +1,4 @@
-# Project Name: Kompas Scraper - A Web Scraper for News Articles
+# Project Name: News Scraper - A Web Scraper for News Articles
 
 This is a mini project that provides a basic web scraper program to scrape news article data from the **https://kompas.com/** website.
 

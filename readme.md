@@ -1,6 +1,6 @@
 # Project Name: News Scraper - A Web Scraper for News Articles
 
-This is a mini project that provides a basic web scraper program to scrape news article data from the **https://kompas.com/** website.
+This is an experimental Sentiment Analysis mini project based on web scraped news article data from the [kompas.com](https://www.kompas.com/) website.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ To set up this program on your local machine, you will need to follow these step
 ```bash
 python -m venv [envname]
 ```
-3. Activate the virtualenv: 
+3. Activate the virtual env: 
 ```bash
 .\venv\Scripts\activate
 ```
@@ -28,13 +28,23 @@ pip install -r requirements.txt
 
 ## Usage
 
-There are 3 separate Python programs included in this project:
+There are 3 separate Python programs (.py) and 2 Python notebooks (.ipynb) included in the 'notebook' folder for this project.
+
+The Python programs are:
 
 1. `news_url.py`: This script will only scrape the news headline and URL and can be run independently.
 2. `news_article.py`: This script will get the URL stored from news_url.py process and will scrape information regarding the news article, such as author name, published date, and the main article itself.
 3. `news_compile.py`: This script is the combination of the two previous scripts using a class method to simplify and ease the process. To run this, you will need to enter the maximum page that you want to scrape (as of 25/03/2023, the maximum page limit is about 666 pages).
 
 To run the program, you can use standard python syntax `python [program_name]`.
+
+The Python notebooks are:
+1. `news_scraper_prep.ipynb`: This notebook focuses solely on preparing scraped news article data for the Sentiment Analysis project requirements.
+2. `news_scraper_model.ipynb`: This notebook is to create and compare between 2 models (SVM and XGB) to determine which is better to predict the the scraped news article data.
+
+The result of experimentation showed that both SVM and XGB models perform relatively well in classifying the articles into positive and negative sentiment categories. 
+Interestingly, the lexicon methods are the one who actually affected the results instead of the model algorithm itself. 
+However, further experimentation may be necessary to prove this.
 
 ## Disclaimer
 

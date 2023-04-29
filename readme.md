@@ -1,4 +1,4 @@
-# Project Name: News Scraper - A Web Scraper for News Articles
+# Project Name: News Articles Sentiment Analysis
 
 This is an experimental Sentiment Analysis mini project based on web scraped news article data from the [kompas.com](https://www.kompas.com/) website.
 
